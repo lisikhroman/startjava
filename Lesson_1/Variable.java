@@ -5,7 +5,7 @@ public class Variable {
         int capacitySsd = 524288;
         long speedRam = 2400000000l;
         float speedCpuF = 1.8f;
-        double speedCpuD = 1.8d;
+        double speedCpuD = 1.8;
         char systemDisc = 'C';
         boolean currentSpeedCpu = 1.1 < speedCpuF;
         
@@ -18,5 +18,4 @@ public class Variable {
         System.out.println(systemDisc);
         System.out.println(currentSpeedCpu);
     }
-
 }
