@@ -1,45 +1,45 @@
 public class MyFirstApp {
     public static void main(String[] args) {
         System.out.println("Hello, World");
-    
-        int sum = 1 + 2;
-        boolean isEventNumber1 = sum % 2 == 0;
-        if(isEventNumber1 == true) {
-            System.out.println("Число " + sum + " является четным");
-        }
-        else if (isEventNumber1 == false) {
-            System.out.println("Число " + sum + " является нечетным");
-        }
+        
+        // int result = 1;
+        // for(int i = 2; i <= 5; i++) {
+        //     result = result + i;
+        //     if(result % 2 == 0) {
+        //         System.out.println("Число " + result + " является четным");
+        //     }
+        //     else {
+        //         System.out.println("Число " + result + " является нечетным");
+        //     }
+        // }
+        // System.out.println("1 + 2 + 3 + 4 + 5 =" + result);
+        
+        // int i = 2;
+        // int result = 1;
+        // while(i <= 5) {
+        //     result = result + i;
+        //     if(result % 2 == 0) {
+        //         System.out.println("Число " + result + " является четным");
+        //     }
+        //     else {
+        //         System.out.println("Число " + result + " является нечетным");
+        //     }
+        //     i++;
+        // }
+        // System.out.println("1 + 2 + 3 + 4 + 5 =" + result);
 
-        int sum1 = sum + 3;
-        boolean isEventNumber2 = sum1 % 2 == 0;
-        if(isEventNumber2 == true) {
-            System.out.println("Число " + sum1 + " является четным");
-        }
-        else if (isEventNumber2 == false) {
-            System.out.println("Число " + sum1 + " является нечетным");
-        }
-
-        int sum2 = sum1 + 4;
-        boolean isEventNumber3 = sum2 % 2 == 0;
-        if(isEventNumber3 == true) {
-            System.out.println("Число " + sum2 + " является четным");
-        }
-        else if (isEventNumber3 == false) {
-            System.out.println("Число " + sum2 + " является нечетным");
-        }
-
-        int sum3 = sum2 + 5;
-        boolean isEventNumber4 = sum3 % 2 == 0;
-        if(isEventNumber4 == true) {
-            System.out.println("Число " + sum3 + " является четным");
-        }
-        else if (isEventNumber4 == false) {
-            System.out.println("Число " + sum3 + " является нечетным");
-        }
-
-        for (int i = 0; i < args.length; ++i) {
-            System.out.printf("args[%d] = %s\n", i, args[i]);
-        }
+        int i = 2;
+        int result = 1;
+        do {
+            result = result + i;
+            if(result % 2 == 0) {
+                System.out.println("Число " + result + " является четным");
+            }
+            else {
+                System.out.println("Число " + result + " является нечетным");
+            }
+            i++;
+        } while(i <= 5);
+        System.out.println("1 + 2 + 3 + 4 + 5 =" + result);
     }
 }
