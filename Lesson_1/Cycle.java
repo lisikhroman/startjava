@@ -9,7 +9,7 @@ public class Cycle {
         int j = 6;
         while(j >= -6) {
             System.out.println(j);
-            j = j - 2;
+            j -= 2;
         }
 
         System.out.println("Подсчитаем с помощью цикла do-while сумму нечетных чисел от [10, 20]. Выводим сумму на консоль");
@@ -17,7 +17,7 @@ public class Cycle {
         int sum = 0;
         do {
             if(k % 2 != 0) {
-                sum = sum + k;
+                sum += k;
             }
             k++;
         } while(k <= 20);
