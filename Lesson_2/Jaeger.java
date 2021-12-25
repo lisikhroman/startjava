@@ -10,11 +10,11 @@ public class Jaeger {
     private int strength;
     private int armor;
 
-    public String getMadelname() {
+    public String getMadelName() {
         return madelName;
     }
 
-    public void setMadelname(String madelName) {
+    public void setMadelName(String madelName) {
         this.madelName = madelName;
     }
 

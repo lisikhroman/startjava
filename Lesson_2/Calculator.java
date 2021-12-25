@@ -19,29 +19,24 @@ public class Calculator {
 
     public long calculate() {
         switch(operation) {
-        case '+' :
-            result = a + b;
-            break;
-        case '-' :
-            result = a - b;
-            break;
-        case '*' :
-            result = a * b;
-            break;
-        case '/' :
-            result = a / b;
-            break;
-        case '%' :
-            result = a % b;
-            break;
-        case '^' :
-            result = 1;
-            for(int i = 1; i <= b; i++) {
-                result *= a;
-            }
-            break;
-        default:
-            System.out.println("Введите корректный знак математической операции!");
+            case '+' :
+                return a + b;
+            case '-' :
+                return a - b;
+            case '*' :
+                return a * b;
+            case '/' :
+                return a / b;
+            case '%' :
+                return a % b;
+            case '^' :
+                result = 1;
+                for(int i = 1; i <= b; i++) {
+                    result *= a;
+                }
+                return result;
+            default:
+                System.out.println("Введите корректный знак математической операции!");
         }
         return result;
     }

@@ -4,7 +4,7 @@ public class JaegerTest {
         Jaeger jaegerOne = new Jaeger();
         Jaeger jaegerTwo = new Jaeger();
 
-        jaegerOne.setMadelname("Cherno Alpha");
+        jaegerOne.setMadelName("Cherno Alpha");
         jaegerOne.setMark("Mark-1");
         jaegerOne.setOrigin("Russia");
         jaegerOne.setWeapon("Incinerator turbines");
@@ -14,7 +14,7 @@ public class JaegerTest {
         jaegerOne.setStrength(10);
         jaegerOne.setArmor(10);
 
-        jaegerTwo.setMadelname("Crimson Typhoon");
+        jaegerTwo.setMadelName("Crimson Typhoon");
         jaegerTwo.setMark("Mark-4");
         jaegerTwo.setOrigin("China");
         jaegerTwo.setWeapon("IB22 Plasmacaster");
@@ -25,7 +25,7 @@ public class JaegerTest {
         jaegerTwo.setArmor(6);
 
         System.out.println("----------------------------------------------");
-        System.out.println("Название первой модели егеря " + jaegerOne.getMadelname());
+        System.out.println("Название первой модели егеря " + jaegerOne.getMadelName());
         System.out.println("марка егеря: " + jaegerOne.getMark());
         System.out.println("страна происхождения: " + jaegerOne.getOrigin());
         System.out.println("используемое оружие: " + jaegerOne.getWeapon());
@@ -35,7 +35,7 @@ public class JaegerTest {
         System.out.println("сила " + jaegerOne.getStrength());
         System.out.println("броня " + jaegerOne.getArmor());
         System.out.println("----------------------------------------------");
-        System.out.println("Название второй модели егеря " + jaegerTwo.getMadelname());
+        System.out.println("Название второй модели егеря " + jaegerTwo.getMadelName());
         System.out.println("марка егеря: " + jaegerTwo.getMark());
         System.out.println("страна происхождения: " + jaegerTwo.getOrigin());
         System.out.println("используемое оружие: " + jaegerTwo.getWeapon());
@@ -45,9 +45,9 @@ public class JaegerTest {
         System.out.println("сила " + jaegerTwo.getStrength());
         System.out.println("броня " + jaegerTwo.getArmor());
         System.out.println("----------------------------------------------");
-        System.out.println("Егерь " + jaegerTwo.move() + " на подмогу");
-        System.out.println("Егерь " + jaegerTwo.scanKaiju() + " местность на предмет наличия Кайдзю");
-        System.out.println(jaegerOne.useWeapon() + " меняет оружие");
+        System.out.println("Егерь " + jaegerTwo.getMadelName() + " " + jaegerTwo.move() + " на подмогу");
+        System.out.println("Егерь " + jaegerTwo.getMadelName() + " " + jaegerTwo.scanKaiju() + " местность на предмет наличия Кайдзю");
+        System.out.println(jaegerOne.useWeapon() + " и меняет оружие");
         jaegerOne.setWeapon("Z-14 Tesla fists");
         System.out.println(jaegerOne.useWeapon());
     }
