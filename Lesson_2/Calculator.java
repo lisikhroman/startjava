@@ -3,7 +3,6 @@ public class Calculator {
     private long a;
     private long b;
     private char operation;
-    private long result;
 
     public void setA(long a) {
         this.a = a;
@@ -30,14 +29,14 @@ public class Calculator {
             case '%' :
                 return a % b;
             case '^' :
-                result = 1;
+                long result = 1;
                 for(int i = 1; i <= b; i++) {
                     result *= a;
                 }
                 return result;
             default:
                 System.out.println("Введите корректный знак математической операции!");
+                return 0;
         }
-        return result;
     }
 }

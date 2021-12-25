@@ -7,15 +7,15 @@ public class Player {
         this.name = name;
     }
 
-    public String getPlayerName() {
+    public String getName() {
         return name;
     }
 
-    public void setPlayerNumber(int number) {
+    public void setNumber(int number) {
         this.number = number;
     }
 
-    public int getPlayerNumber() {
+    public int getNumber() {
         return number;
     }
 }
