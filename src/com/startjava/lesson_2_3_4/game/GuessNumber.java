@@ -160,7 +160,7 @@ public record GuessNumber(Player[] players) {
 
         int tie = 0;
         for (int i = 0; i <= resultGame.length - 1; i++) {
-            if(resultGame[0] == players[i].getTotalWin()) {
+            if (resultGame[0] == players[i].getTotalWin()) {
                 tie++;
             }
         }
@@ -170,7 +170,7 @@ public record GuessNumber(Player[] players) {
             winnerName = "ничья";
         } else {
             for (int i = 0; i <= resultGame.length - 1; i++) {
-                if(resultGame[2] == players[i].getTotalWin()) {
+                if (resultGame[2] == players[i].getTotalWin()) {
                     winnerName = players[i].getName();
                 }
             }

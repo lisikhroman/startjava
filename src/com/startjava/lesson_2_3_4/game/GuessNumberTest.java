@@ -29,7 +29,7 @@ public class GuessNumberTest {
                 result = game.run();
             }
             quantityGame++;
-            if(quantityGame == 3) {
+            if (quantityGame == 3) {
                 break;
             } else {
                 System.out.print("Хотите продолжить игру? [yes/no]: ");

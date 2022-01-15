@@ -35,12 +35,12 @@ public class Player {
         Arrays.fill(number, 0, attempts, 0);
     }
 
-    public void setAttempt(int attempt) {
-        this.attempt = attempt;
-    }
-
     public int getAttempt() {
         return attempt;
+    }
+
+    public void setAttempt(int attempt) {
+        this.attempt = attempt;
     }
 
     public void setQuantityWin() {
