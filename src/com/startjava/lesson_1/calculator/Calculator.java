@@ -1,5 +1,3 @@
-package com.startjava.lesson_1.calculator;
-
 public class Calculator {
 
     public static void main(String[] args) {
