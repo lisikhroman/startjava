@@ -37,9 +37,9 @@ public class GuessNumberTest {
             }
         } while (!"no".equals(solution));
         if (result.equals("ничья")) {
-            System.out.print("По результатам трех игр: " + result);
+            System.out.println("По результатам трех игр: " + result);
         } else {
-            System.out.print("По результатам трех игр победил игрок: " + result);
+            System.out.println("По результатам трех игр победил игрок: " + result);
         }
     }
 
