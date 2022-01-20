@@ -7,7 +7,7 @@ public class Player {
     private final String name;
     private final int[] number = new int[10];
     private int attempt;
-    private int win;
+    private int countWins;
 
     public Player(String name) {
         this.name = name;
@@ -17,26 +17,27 @@ public class Player {
         return name;
     }
 
-    public boolean setNumber(int number, int index) {
+    public boolean setNumber(int number) {
         if ((number > 0) && (number <= 100)) {
-            this.number[index] = number;
+            attempt++;
+            this.number[attempt - 1] = number;
             return true;
-        } else {
-            System.out.println("Ввели недопустимое число! Число должно принадлежать диапазону (0, 100]");
-            return false;
         }
+
+        System.out.println("Ввели недопустимое число! Число должно принадлежать диапазону (0, 100]");
+        return false;
     }
 
-    public int getNumber(int index) {
-        return number[index];
+    public int getNumber() {
+        return number[attempt - 1];
     }
 
-    public int[] getAllNumbers(int length) {
-        return Arrays.copyOf(number, length);
+    public int[] getAllNumbers() {
+        return Arrays.copyOf(number, attempt);
     }
 
-    public void resetNumbers(int attempts) {
-        Arrays.fill(number, 0, attempts, 0);
+    public void resetNumbers() {
+        Arrays.fill(number, 0, attempt, 0);
     }
 
     public int getAttempt() {
@@ -47,19 +48,11 @@ public class Player {
         this.attempt = attempt;
     }
 
-    public void incrementAttempt() {
-        attempt++;
-    }
-
-    public void decreaseAttempt() {
-        attempt--;
-    }
-
     public void incrementWin() {
-        win++;
+        countWins++;
     }
 
     public int getCountWins() {
-        return win;
+        return countWins;
     }
 }
