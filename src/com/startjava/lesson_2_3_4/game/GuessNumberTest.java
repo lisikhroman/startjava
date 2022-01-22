@@ -26,7 +26,7 @@ public class GuessNumberTest {
         } while (!"no".equals(solution));
     }
 
-    public static Player[] createPlayers() {
+    private static Player[] createPlayers() {
         Player[] players = new Player[3];
         Scanner scanner = new Scanner(System.in);
         for (int i = 1; i <= 3; i++) {

@@ -5,8 +5,8 @@ import java.util.Arrays;
 public class Player {
 
     private final String name;
-    private final int[] number = new int[10];
-    private int attempt;
+    private final int[] numbers = new int[10];
+    private int attempt = 0;
     private int countWins;
 
     public Player(String name) {
@@ -20,24 +20,22 @@ public class Player {
     public boolean setNumber(int number) {
         if ((number > 0) && (number <= 100)) {
             attempt++;
-            this.number[attempt - 1] = number;
+            numbers[attempt - 1] = number;
             return true;
         }
-
-        System.out.println("Ввели недопустимое число! Число должно принадлежать диапазону (0, 100]");
         return false;
     }
 
     public int getNumber() {
-        return number[attempt - 1];
+        return numbers[attempt - 1];
     }
 
     public int[] getAllNumbers() {
-        return Arrays.copyOf(number, attempt);
+        return Arrays.copyOf(numbers, attempt);
     }
 
     public void resetNumbers() {
-        Arrays.fill(number, 0, attempt, 0);
+        Arrays.fill(numbers, 0, attempt, 0);
     }
 
     public int getAttempt() {
